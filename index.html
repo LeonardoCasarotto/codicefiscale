@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Calcolo del codice fiscale</title>
+    <script src="main.js"></script>
+</head>
+<body>
+<form>
+    <input type="text" id="surname">
+    <input type="text" id="name">
+    <select id="sex">
+        <option>Maschio</option>
+        <option>Femmina</option>
+    </select>
+    <input type="text" id="birthplace">
+    <input type="text" id="provincia">
+    <input type="date" id="birthday">
+    <input type="button" value="Elabora" onclick="calcola(
+        document.getElementById('surname').value,
+        document.getElementById('name').value,
+        document.getElementById('sex').value,
+        document.getElementById('birthplace').value,
+        document.getElementById('provincia'),
+        document.getElementById('birthday'))">
+</form>
+</body>
+</html>
