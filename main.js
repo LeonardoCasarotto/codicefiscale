@@ -1,6 +1,6 @@
 function calcola(surname,name,sex,birthplace,provincia,birthday){
      //let nomecog= inizio(surname.toUpperCase(),name.toUpperCase());
-     data(birthday);
+     data(birthday,sex);
     //TODO Check all ;
 }
 function inizio(cognome,nome){
@@ -99,15 +99,34 @@ function inizio(cognome,nome){
     }
     return cognome+nome;
 }
-function data(date){
+function data(date,sex){
 
     let year = date.slice(2,4)
     console.log(date);
     let m=date.slice(5,7);
     let mesi={"01":"A","02":"B","03":"C","04":"D","05":"E","06":"H","07":"L","08":"M","09":"P","10":"R","11":"S","12":"T"};
-
-    console.log(m);
+    m= mesi[m];
+    let day=date.slice(8);
+    if(sex=="Femmina"){
+    day=Number(day)+40;
+    }
+    
+    console.log(day);
+    
     // TODO return year+lett;
+}
+//TODO TO UNDERSTAND BETTER
+function prova(){
+    //let i=0;
+    //$.getJSON("data/codici.json", function(json) {
+      //  for(let x in json){
+        //    if (x.nome =="Abano Terme"){
+          //      console.log(x);
+            //}
+
+      //  }
+    //});
+
 }
 
     
