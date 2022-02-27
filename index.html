@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <title>Calcolo del codice fiscale</title>
     <script src="main.js"></script>
+    <script>
+        function out(){
+            console.log(document.getElementById("birthday").value)
+        }
+    </script>
 </head>
 <body>
 <form>
@@ -17,12 +22,12 @@
     <input type="text" id="provincia">
     <input type="date" id="birthday">
     <input type="button" value="Elabora" onclick="calcola(
-        document.getElementById('surname').value,
-        document.getElementById('name').value,
+        document.getElementById('surname').value.toUpperCase(),
+        document.getElementById('name').value.toUpperCase(),
         document.getElementById('sex').value,
         document.getElementById('birthplace').value,
-        document.getElementById('provincia'),
-        document.getElementById('birthday'))">
+        document.getElementById('provincia').value,
+        document.getElementById('birthday').value.toString())">
 </form>
 </body>
 </html>

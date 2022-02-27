@@ -1,9 +1,9 @@
 function calcola(surname,name,sex,birthplace,provincia,birthday){
-    check(surname.toUpperCase(),name.toUpperCase())
-    //First 6 letters
+     //let nomecog= inizio(surname.toUpperCase(),name.toUpperCase());
+     data(birthday);
     //TODO Check all ;
 }
-function check(cognome,nome){
+function inizio(cognome,nome){
     let consonanti=[];
     let vocali=[];
     //cognome
@@ -97,7 +97,17 @@ function check(cognome,nome){
             
         }
     }
-    console.log(cognome,nome);
+    return cognome+nome;
+}
+function data(date){
+
+    let year = date.slice(2,4)
+    console.log(date);
+    let m=date.slice(5,7);
+    let mesi={"01":"A","02":"B","03":"C","04":"D","05":"E","06":"H","07":"L","08":"M","09":"P","10":"R","11":"S","12":"T"};
+
+    console.log(m);
+    // TODO return year+lett;
 }
 
     
