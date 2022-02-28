@@ -1,8 +1,10 @@
+var codicecat;
 function calcola(surname,name,sex,birthplace,provincia,birthday){
-     //let nomecog= inizio(surname.toUpperCase(),name.toUpperCase());
-        let codicefiscale= inizio(surname,name)+data(birthday,sex)+codicecatastale(birthplace,provincia);
+        codicecatastale(birthplace,provincia)
+        let codicefiscale= inizio(surname,name)+data(birthday,sex)+codicecat;
         codicefiscale =codiceverifica(codicefiscale);
-     //data(birthday,sex);
+       console.log(codicefiscale);
+
     //TODO Check all ;
 }
 function inizio(cognome,nome){
@@ -114,26 +116,100 @@ function data(date,sex){
 }
 
 function codicecatastale(value,district){
-
+    var result;
     $.ajax({
         url: "./data/codici.json",
         dataType: "json",
         type: "get",
+        async: false,
         cache: false,
         success: function (obj){
             const keyone= "nome";
             const keytwo = "sigla";
-            //TODO Change colors
 
             result= obj.comuni.find((x => x[keyone] ==value&& x[keytwo]==district))
-            return result["codiceCatastale"];
+            codicecat=result["codiceCatastale"]
+            
+
+
+
             
         }
-    })
-    
-}
-function codiceverifica(codicefiscale){
+    });
+
 
 }
+function codiceverifica(codicefiscale){
+    let dispari=0;
+    let pari=0;
+    const legdisp = {"0":"1",
+                    "1":"0",
+                    "2":"5",
+                    "3":"7",
+                    "4":"9",
+                    "5":"13",
+                    "6":"15",
+                    "7":"17",
+                    "8":"19",
+                    "9":"21",
+                    "A":"1",
+                    "B":"0",
+                    "C":"5",
+                    "D":"7",
+                    "E":"9",
+                    "F":"13",
+                    "G":"15",
+                    "H":"17",
+                    "I":"19",
+                    "J":"21",
+                    "K":"2",
+                    "L":"4",
+                    "M":"18",
+                    "N":"20",
+                    "O":"11",
+                    "P":"3",
+                    "Q":"6",
+                    "R":"8",
+                    "S":"12",
+                    "T":"14",
+                    "U":"16",
+                    "V":"10",
+                    "W":"22",
+                    "X":"25",
+                    "Y":"24",
+                    "Z":"23"
+
+    }
+    
+    for(let i=0;i<codicefiscale.length;i++){
+        //IF IS EVEN
+        if(i%2==1){
+            //IF IS NAN
+            if(isNaN(codicefiscale.charAt(i))){
+                pari+=(codicefiscale.charCodeAt(i))-65;
+                console.log((codicefiscale.charCodeAt(i)-65))
+            }
+            //ELSE
+            else{
+                pari+=Number(codicefiscale.charAt(i));
+                console.log(codicefiscale.charAt(i))
+            }
+            
+        }
+        //IF IS UNEVEN
+        else if(i%2==0){
+            dispari+=Number(legdisp[codicefiscale.charAt(i)])
+            console.log(legdisp[codicefiscale.charAt(i)])
+        }
+    }
+    
+    
+
+    return codicefiscale+ String.fromCharCode((pari+dispari)%26+65);
+    
+
+}
+
+
     
    
