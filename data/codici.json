@@ -1,4 +1,4 @@
-[
+{ "comuni": [
   {
     "nome": "Abano Terme",
     "codice": "028001",
@@ -174554,3 +174554,4 @@
     "popolazione": 1985
   }
 ]
+}

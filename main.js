@@ -117,15 +117,26 @@ function data(date,sex){
 }
 //TODO TO UNDERSTAND BETTER
 function prova(){
-    //let i=0;
-    //$.getJSON("data/codici.json", function(json) {
-      //  for(let x in json){
-        //    if (x.nome =="Abano Terme"){
-          //      console.log(x);
-            //}
+    /*let i=0;
+    $.getJSON("data/codici.json", function(json) {
+        console.log(json[1]);
 
-      //  }
-    //});
+
+    });*/
+    $.ajax({
+        url: "./data/codici.json",
+        dataType: "json",
+        type: "get",
+        cache: false,
+        success: function (obj){
+            const key = "nome";
+            const value = "Abano Terme";
+            const result = obj.comuni.find(color => color[key] === value);
+            console.log(result["codiceCatastale"]);
+            document.write(result["codiceCatastale"])
+        }
+    })
+
 
 }
 
