@@ -1,6 +1,8 @@
 function calcola(surname,name,sex,birthplace,provincia,birthday){
      //let nomecog= inizio(surname.toUpperCase(),name.toUpperCase());
-     data(birthday,sex);
+        let codicefiscale= inizio(surname,name)+data(birthday,sex)+codicecatastale(birthplace,provincia);
+        codicefiscale =codiceverifica(codicefiscale);
+     //data(birthday,sex);
     //TODO Check all ;
 }
 function inizio(cognome,nome){
@@ -41,11 +43,6 @@ function inizio(cognome,nome){
         }
 
     }
-
-
-
-
-
 
    //nome
 
@@ -111,34 +108,32 @@ function data(date,sex){
     day=Number(day)+40;
     }
     
-    console.log(day);
-    
-    // TODO return year+lett;
+    return year+m+day;
+
+
 }
-//TODO TO UNDERSTAND BETTER
-function prova(){
-    /*let i=0;
-    $.getJSON("data/codici.json", function(json) {
-        console.log(json[1]);
 
+function codicecatastale(value,district){
 
-    });*/
     $.ajax({
         url: "./data/codici.json",
         dataType: "json",
         type: "get",
         cache: false,
         success: function (obj){
-            const key = "nome";
-            const value = "Abano Terme";
-            const result = obj.comuni.find(color => color[key] === value);
-            console.log(result["codiceCatastale"]);
-            document.write(result["codiceCatastale"])
+            const keyone= "nome";
+            const keytwo = "sigla";
+            //TODO Change colors
+
+            result= obj.comuni.find((x => x[keyone] ==value&& x[keytwo]==district))
+            return result["codiceCatastale"];
+            
         }
     })
-
+    
+}
+function codiceverifica(codicefiscale){
 
 }
-
     
    
