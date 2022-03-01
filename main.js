@@ -1,9 +1,11 @@
 var codicecat;
 function calcola(surname,name,sex,birthplace,provincia,birthday){
-        codicecatastale(birthplace,provincia)
+        birthplace=adapt(birthplace);
+        codicecatastale(birthplace,provincia);
+        
         let codicefiscale= inizio(surname,name)+data(birthday,sex)+codicecat;
         codicefiscale =codiceverifica(codicefiscale);
-       console.log(codicefiscale);
+       alert(codicefiscale);
 
     //TODO Check all ;
 }
@@ -101,7 +103,6 @@ function inizio(cognome,nome){
 function data(date,sex){
 
     let year = date.slice(2,4)
-    console.log(date);
     let m=date.slice(5,7);
     let mesi={"01":"A","02":"B","03":"C","04":"D","05":"E","06":"H","07":"L","08":"M","09":"P","10":"R","11":"S","12":"T"};
     m= mesi[m];
@@ -128,12 +129,8 @@ function codicecatastale(value,district){
             const keytwo = "sigla";
 
             result= obj.comuni.find((x => x[keyone] ==value&& x[keytwo]==district))
-            codicecat=result["codiceCatastale"]
-            
+            codicecat =result["codiceCatastale"];
 
-
-
-            
         }
     });
 
@@ -187,19 +184,18 @@ function codiceverifica(codicefiscale){
             //IF IS NAN
             if(isNaN(codicefiscale.charAt(i))){
                 pari+=(codicefiscale.charCodeAt(i))-65;
-                console.log((codicefiscale.charCodeAt(i)-65))
+
             }
             //ELSE
             else{
                 pari+=Number(codicefiscale.charAt(i));
-                console.log(codicefiscale.charAt(i))
+
             }
             
         }
         //IF IS UNEVEN
         else if(i%2==0){
             dispari+=Number(legdisp[codicefiscale.charAt(i)])
-            console.log(legdisp[codicefiscale.charAt(i)])
         }
     }
     
@@ -208,6 +204,18 @@ function codiceverifica(codicefiscale){
     return codicefiscale+ String.fromCharCode((pari+dispari)%26+65);
     
 
+}
+function adapt(value){
+    value.toLowerCase();
+    value= value.charAt(0).toUpperCase()+value.slice(1);
+    for(let i=0;i<value.length;i++){
+        if(value.charAt(i-1)==" "){
+            value=value.slice(0,i) +value.charAt(i).toUpperCase()+value.slice(i+1)
+        }
+        
+    }
+    return value;
+    
 }
 
 

@@ -7,6 +7,7 @@
     <script src="main.js"></script>
     <script src="./data/codici.json" type="application/json"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="shortcut icon" href="http://localhost:63342/favicon.ico" type="image/x-icon">
     <script>
         function out(){
             console.log(document.getElementById("birthday").value)
@@ -15,19 +16,20 @@
 </head>
 <body>
 <form>
-    <input type="text" id="surname">
-    <input type="text" id="name">
+    <input type="text" id="surname"  class="textinput" >
+    <input type="text" id="name" class="textinput">
     <select id="sex">
+
         <option>Maschio</option>
         <option>Femmina</option>
     </select>
-    <input type="text" id="birthplace">
-    <input type="text" id="provincia">
+    <input type="text" id="birthplace" class="textinputcap">
+    <input type="text" id="provincia" class="textinput">
     <input type="date" id="birthday">
     <input type="button" value="Elabora" onclick="calcola(
         document.getElementById('surname').value.toUpperCase(),
         document.getElementById('name').value.toUpperCase(),
-        document.getElementById('sex').value,
+        document.getElementById('sex').value.toString(),
         document.getElementById('birthplace').value,
         document.getElementById('provincia').value.toUpperCase(),
         document.getElementById('birthday').value.toString())">
