@@ -7,26 +7,35 @@
     <script src="main.js"></script>
     <script src="./data/codici.json" type="application/json"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="shortcut icon" href="http://localhost:63342/favicon.ico" type="image/x-icon">
-    <script>
-        function out(){
-            console.log(document.getElementById("birthday").value)
-        }
-    </script>
+    <link rel="shortcut icon" href="./data/img/cf.png" type="image/x-icon">
 </head>
 <body>
-<form>
-    <input type="text" id="surname"  class="textinput" >
-    <input type="text" id="name" class="textinput">
-    <select id="sex">
+<h1>Calcolo del codice Fiscale</h1>
 
+<form id="form">
+    <h3>Compila i campi sottostanti per calcolare il tuo codice fiscale!</h3>
+    <label for="surname">Cognome</label>
+    <input type="text" id="surname" class="textinput" required>
+
+    <label for="name">Nome</label>
+    <input type="text" id="name" class="textinput" required>
+
+    <label for="sex">Sesso</label>
+    <select id="sex">
         <option>Maschio</option>
         <option>Femmina</option>
     </select>
-    <input type="text" id="birthplace" class="textinputcap">
-    <input type="text" id="provincia" class="textinput">
-    <input type="date" id="birthday">
-    <input type="button" value="Elabora" onclick="calcola(
+
+    <label for="birthplace">Luogo di Nascita</label>
+    <input type="text" id="birthplace" class="textinputcap" required>
+
+    <label for="provincia">Provincia (Sigla)</label>
+    <input type="text" id="provincia" class="textinput" required>
+
+    <label for="birthday">Data di Nascita</label>
+    <input type="date" id="birthday" required>
+
+    <input type="button" id="invio" value="Elabora" onclick="calcola(
         document.getElementById('surname').value.toUpperCase(),
         document.getElementById('name').value.toUpperCase(),
         document.getElementById('sex').value.toString(),
@@ -34,6 +43,14 @@
         document.getElementById('provincia').value.toUpperCase(),
         document.getElementById('birthday').value.toString())">
 </form>
-<div id="majita"></div>
+<div id="invalid">
+    <h2>Attenzione! Per poter calcolare il codice fiscale è necessario che tutti i campi siano compilati correttamente!</h2>
+    <button class="ritenta" onclick="ritenta()">Ritenta</button>
+</div>
+<div id="result">
+   <h3>Il tuo codice fiscale è:</h3>
+    <h4 id="cf"></h4>
+    <button  class="ritenta" onclick="ritenta()">Calcola un nuovo Codice</button>
+</div>
 </body>
 </html>

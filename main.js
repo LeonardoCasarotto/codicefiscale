@@ -1,13 +1,30 @@
 var codicecat;
 function calcola(surname,name,sex,birthplace,provincia,birthday){
+        //if is empty
+        if(surname==""||
+            name==""||
+            sex==""||
+            birthplace==""||
+            provincia==""){
+            
+            errore();
+            return 0;
+        }
         birthplace=adapt(birthplace);
         codicecatastale(birthplace,provincia);
-        
         let codicefiscale= inizio(surname,name)+data(birthday,sex)+codicecat;
         codicefiscale =codiceverifica(codicefiscale);
-       alert(codicefiscale);
+        //if is invalid
+        if(codicefiscale.includes("undefined")){
+            errore();
+            return 0;
+        }
+        document.getElementById("cf").innerHTML=codicefiscale;
+        document.getElementById("form").style.display = "none";
+        document.getElementById("result").style.display = "block";
+       
 
-    //TODO Check all ;
+
 }
 function inizio(cognome,nome){
     let consonanti=[];
@@ -41,7 +58,7 @@ function inizio(cognome,nome){
                 cognome+=vocali[i];
             }
             else{
-                cognome+="X"
+                cognome+="X";
             }
 
         }
@@ -102,7 +119,7 @@ function inizio(cognome,nome){
 }
 function data(date,sex){
 
-    let year = date.slice(2,4)
+    let year = date.slice(2,4);
     let m=date.slice(5,7);
     let mesi={"01":"A","02":"B","03":"C","04":"D","05":"E","06":"H","07":"L","08":"M","09":"P","10":"R","11":"S","12":"T"};
     m= mesi[m];
@@ -117,6 +134,7 @@ function data(date,sex){
 }
 
 function codicecatastale(value,district){
+    
     var result;
     $.ajax({
         url: "./data/codici.json",
@@ -128,7 +146,7 @@ function codicecatastale(value,district){
             const keyone= "nome";
             const keytwo = "sigla";
 
-            result= obj.comuni.find((x => x[keyone] ==value&& x[keytwo]==district))
+            result= obj.comuni.find((x => x[keyone] ==value&& x[keytwo]==district));
             codicecat =result["codiceCatastale"];
 
         }
@@ -195,7 +213,7 @@ function codiceverifica(codicefiscale){
         }
         //IF IS UNEVEN
         else if(i%2==0){
-            dispari+=Number(legdisp[codicefiscale.charAt(i)])
+            dispari+=Number(legdisp[codicefiscale.charAt(i)]);
         }
     }
     
@@ -210,14 +228,21 @@ function adapt(value){
     value= value.charAt(0).toUpperCase()+value.slice(1);
     for(let i=0;i<value.length;i++){
         if(value.charAt(i-1)==" "){
-            value=value.slice(0,i) +value.charAt(i).toUpperCase()+value.slice(i+1)
+            value=value.slice(0,i) +value.charAt(i).toUpperCase()+value.slice(i+1);
         }
         
     }
     return value;
     
 }
+function ritenta(){
+    document.getElementById("form").style.display = "block";
+    document.getElementById("result").style.display = "none";
+    document.getElementById("invalid").style.display = "none";
+}
+function errore(){
+    document.getElementById("form").style.display = "none";
+    document.getElementById("invalid").style.display = "block";
+}
 
 
-    
-   
