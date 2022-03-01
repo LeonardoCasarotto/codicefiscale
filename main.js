@@ -22,6 +22,7 @@ function calcola(surname,name,sex,birthplace,provincia,birthday){
         document.getElementById("cf").innerHTML=codicefiscale;
         document.getElementById("form").style.display = "none";
         document.getElementById("result").style.display = "block";
+        
        
 
 
@@ -140,7 +141,7 @@ function codicecatastale(value,district){
         url: "./data/codici.json",
         dataType: "json",
         type: "get",
-        async: false,
+        async: false, // this doesn't allow to start the next function without having completed this one
         cache: false,
         success: function (obj){
             const keyone= "nome";
@@ -236,13 +237,23 @@ function adapt(value){
     
 }
 function ritenta(){
+    svuotaform();
     document.getElementById("form").style.display = "block";
     document.getElementById("result").style.display = "none";
     document.getElementById("invalid").style.display = "none";
+
 }
 function errore(){
     document.getElementById("form").style.display = "none";
     document.getElementById("invalid").style.display = "block";
+}
+function svuotaform(){
+    document.getElementById('surname').value="";
+        document.getElementById('name').value="";
+        document.getElementById('sex').value="Maschio";
+        document.getElementById('birthplace').value="";
+        document.getElementById('provincia').value="";
+        document.getElementById('birthday').value="";
 }
 
 
