@@ -15,10 +15,10 @@
 <form id="form">
     <h3>Compila i campi sottostanti per calcolare il tuo codice fiscale!</h3>
     <label for="surname">Cognome</label>
-    <input type="text" id="surname" class="textinput" required>
+    <input type="text" id="surname" class="textinput">
 
     <label for="name">Nome</label>
-    <input type="text" id="name" class="textinput" required>
+    <input type="text" id="name" class="textinput">
 
     <label for="sex">Sesso</label>
     <select id="sex">
@@ -26,15 +26,13 @@
         <option>Femmina</option>
     </select>
 
-    <label for="birthplace">Luogo di Nascita</label>
-    <input type="text" id="birthplace" class="textinputcap" required>
+    <label for="birthplace">Luogo di Nascita o Stato, se estero</label>
+    <input type="text" id="birthplace" class="textinputcap">
 
-    <label for="provincia">Provincia (Sigla)</label>
-    <input type="text" id="provincia" class="textinput" required>
-
+    <label for="provincia">Provincia (Sigla), o EE se estero</label>
+    <input type="text" id="provincia" class="textinput" title="Se si è nati all'estero, inserire EE">
     <label for="birthday">Data di Nascita</label>
-    <input type="date" id="birthday" required>
-
+    <input type="date" id="birthday">
     <input type="button" id="invio" value="Elabora" onclick="calcola(
         document.getElementById('surname').value.toUpperCase(),
         document.getElementById('name').value.toUpperCase(),
