@@ -10,7 +10,10 @@ function calcola(surname,name,sex,birthplace,provincia,birthday){
             errore();
             return 0;
         }
+        name=name.replace(/ /g,'')
+        surname=surname.replace(/ /g,'')
         birthplace=adapt(birthplace);
+        console.log(name+" " +surname+" "+ birthplace+ provincia)
         codicecatastale(birthplace,provincia);
         let codicefiscale= inizio(surname,name)+data(birthday,sex)+codicecat;
         codicefiscale =codiceverifica(codicefiscale);
@@ -238,10 +241,8 @@ function codiceverifica(codicefiscale){
         }
     }
     
-    
 
     return codicefiscale+ String.fromCharCode((pari+dispari)%26+65);
-    
 
 }
 function adapt(value){
