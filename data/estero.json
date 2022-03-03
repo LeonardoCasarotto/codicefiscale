@@ -1,0 +1,902 @@
+{"stati":[
+  {
+    "Denominazione IT": "Italia",
+    "Codice AT": "n.d."
+  },
+  {
+    "Denominazione IT": "Albania",
+    "Codice AT": "Z100"
+  },
+  {
+    "Denominazione IT": "Andorra",
+    "Codice AT": "Z101"
+  },
+  {
+    "Denominazione IT": "Austria",
+    "Codice AT": "Z102"
+  },
+  {
+    "Denominazione IT": "Belgio",
+    "Codice AT": "Z103"
+  },
+  {
+    "Denominazione IT": "Bulgaria",
+    "Codice AT": "Z104"
+  },
+  {
+    "Denominazione IT": "Danimarca",
+    "Codice AT": "Z107"
+  },
+  {
+    "Denominazione IT": "Finlandia",
+    "Codice AT": "Z109"
+  },
+  {
+    "Denominazione IT": "Francia",
+    "Codice AT": "Z110"
+  },
+  {
+    "Denominazione IT": "Germania",
+    "Codice AT": "Z112"
+  },
+  {
+    "Denominazione IT": "Regno Unito",
+    "Codice AT": "Z114"
+  },
+  {
+    "Denominazione IT": "Grecia",
+    "Codice AT": "Z115"
+  },
+  {
+    "Denominazione IT": "Irlanda",
+    "Codice AT": "Z116"
+  },
+  {
+    "Denominazione IT": "Islanda",
+    "Codice AT": "Z117"
+  },
+  {
+    "Denominazione IT": "Liechtenstein",
+    "Codice AT": "Z119"
+  },
+  {
+    "Denominazione IT": "Lussemburgo",
+    "Codice AT": "Z120"
+  },
+  {
+    "Denominazione IT": "Malta",
+    "Codice AT": "Z121"
+  },
+  {
+    "Denominazione IT": "Monaco",
+    "Codice AT": "Z123"
+  },
+  {
+    "Denominazione IT": "Norvegia",
+    "Codice AT": "Z125"
+  },
+  {
+    "Denominazione IT": "Paesi Bassi",
+    "Codice AT": "Z126"
+  },
+  {
+    "Denominazione IT": "Polonia",
+    "Codice AT": "Z127"
+  },
+  {
+    "Denominazione IT": "Portogallo",
+    "Codice AT": "Z128"
+  },
+  {
+    "Denominazione IT": "Romania",
+    "Codice AT": "Z129"
+  },
+  {
+    "Denominazione IT": "San Marino",
+    "Codice AT": "Z130"
+  },
+  {
+    "Denominazione IT": "Spagna",
+    "Codice AT": "Z131"
+  },
+  {
+    "Denominazione IT": "Svezia",
+    "Codice AT": "Z132"
+  },
+  {
+    "Denominazione IT": "Svizzera",
+    "Codice AT": "Z133"
+  },
+  {
+    "Denominazione IT": "Ucraina",
+    "Codice AT": "Z138"
+  },
+  {
+    "Denominazione IT": "Ungheria",
+    "Codice AT": "Z134"
+  },
+  {
+    "Denominazione IT": "Federazione russa",
+    "Codice AT": "Z154"
+  },
+  {
+    "Denominazione IT": "Stato della Citt� del Vaticano",
+    "Codice AT": "Z106"
+  },
+  {
+    "Denominazione IT": "Estonia",
+    "Codice AT": "Z144"
+  },
+  {
+    "Denominazione IT": "Lettonia",
+    "Codice AT": "Z145"
+  },
+  {
+    "Denominazione IT": "Lituania",
+    "Codice AT": "Z146"
+  },
+  {
+    "Denominazione IT": "Croazia",
+    "Codice AT": "Z149"
+  },
+  {
+    "Denominazione IT": "Slovenia",
+    "Codice AT": "Z150"
+  },
+  {
+    "Denominazione IT": "Bosnia-Erzegovina",
+    "Codice AT": "Z153"
+  },
+  {
+    "Denominazione IT": "Macedonia del Nord",
+    "Codice AT": "Z148"
+  },
+  {
+    "Denominazione IT": "Moldova",
+    "Codice AT": "Z140"
+  },
+  {
+    "Denominazione IT": "Slovacchia",
+    "Codice AT": "Z155"
+  },
+  {
+    "Denominazione IT": "Bielorussia",
+    "Codice AT": "Z139"
+  },
+  {
+    "Denominazione IT": "Repubblica ceca",
+    "Codice AT": "Z156"
+  },
+  {
+    "Denominazione IT": "Montenegro",
+    "Codice AT": "Z159"
+  },
+  {
+    "Denominazione IT": "Serbia",
+    "Codice AT": "Z158"
+  },
+  {
+    "Denominazione IT": "Kosovo",
+    "Codice AT": "Z160"
+  },
+  {
+    "Denominazione IT": "Afghanistan",
+    "Codice AT": "Z200"
+  },
+  {
+    "Denominazione IT": "Arabia Saudita",
+    "Codice AT": "Z203"
+  },
+  {
+    "Denominazione IT": "Bahrein",
+    "Codice AT": "Z204"
+  },
+  {
+    "Denominazione IT": "Bangladesh",
+    "Codice AT": "Z249"
+  },
+  {
+    "Denominazione IT": "Bhutan",
+    "Codice AT": "Z205"
+  },
+  {
+    "Denominazione IT": "Myanmar/Birmania",
+    "Codice AT": "Z206"
+  },
+  {
+    "Denominazione IT": "Brunei Darussalam",
+    "Codice AT": "Z207"
+  },
+  {
+    "Denominazione IT": "Cambogia",
+    "Codice AT": "Z208"
+  },
+  {
+    "Denominazione IT": "Sri Lanka",
+    "Codice AT": "Z209"
+  },
+  {
+    "Denominazione IT": "Cina",
+    "Codice AT": "Z210"
+  },
+  {
+    "Denominazione IT": "Cipro",
+    "Codice AT": "Z211"
+  },
+  {
+    "Denominazione IT": "Corea del Nord",
+    "Codice AT": "Z214"
+  },
+  {
+    "Denominazione IT": "Corea del Sud",
+    "Codice AT": "Z213"
+  },
+  {
+    "Denominazione IT": "Emirati Arabi Uniti",
+    "Codice AT": "Z215"
+  },
+  {
+    "Denominazione IT": "Filippine",
+    "Codice AT": "Z216"
+  },
+  {
+    "Denominazione IT": "Palestina",
+    "Codice AT": "Z161"
+  },
+  {
+    "Denominazione IT": "Giappone",
+    "Codice AT": "Z219"
+  },
+  {
+    "Denominazione IT": "Giordania",
+    "Codice AT": "Z220"
+  },
+  {
+    "Denominazione IT": "India",
+    "Codice AT": "Z222"
+  },
+  {
+    "Denominazione IT": "Indonesia",
+    "Codice AT": "Z223"
+  },
+  {
+    "Denominazione IT": "Iran",
+    "Codice AT": "Z224"
+  },
+  {
+    "Denominazione IT": "Iraq",
+    "Codice AT": "Z225"
+  },
+  {
+    "Denominazione IT": "Israele",
+    "Codice AT": "Z226"
+  },
+  {
+    "Denominazione IT": "Kuwait",
+    "Codice AT": "Z227"
+  },
+  {
+    "Denominazione IT": "Laos",
+    "Codice AT": "Z228"
+  },
+  {
+    "Denominazione IT": "Libano",
+    "Codice AT": "Z229"
+  },
+  {
+    "Denominazione IT": "Timor Leste",
+    "Codice AT": "Z242"
+  },
+  {
+    "Denominazione IT": "Maldive",
+    "Codice AT": "Z232"
+  },
+  {
+    "Denominazione IT": "Malaysia",
+    "Codice AT": "Z247"
+  },
+  {
+    "Denominazione IT": "Mongolia",
+    "Codice AT": "Z233"
+  },
+  {
+    "Denominazione IT": "Nepal",
+    "Codice AT": "Z234"
+  },
+  {
+    "Denominazione IT": "Oman",
+    "Codice AT": "Z235"
+  },
+  {
+    "Denominazione IT": "Pakistan",
+    "Codice AT": "Z236"
+  },
+  {
+    "Denominazione IT": "Qatar",
+    "Codice AT": "Z237"
+  },
+  {
+    "Denominazione IT": "Singapore",
+    "Codice AT": "Z248"
+  },
+  {
+    "Denominazione IT": "Siria",
+    "Codice AT": "Z240"
+  },
+  {
+    "Denominazione IT": "Thailandia",
+    "Codice AT": "Z241"
+  },
+  {
+    "Denominazione IT": "Turchia",
+    "Codice AT": "Z243"
+  },
+  {
+    "Denominazione IT": "Vietnam",
+    "Codice AT": "Z251"
+  },
+  {
+    "Denominazione IT": "Yemen",
+    "Codice AT": "Z246"
+  },
+  {
+    "Denominazione IT": "Kazakhstan",
+    "Codice AT": "Z255"
+  },
+  {
+    "Denominazione IT": "Uzbekistan",
+    "Codice AT": "Z259"
+  },
+  {
+    "Denominazione IT": "Armenia",
+    "Codice AT": "Z252"
+  },
+  {
+    "Denominazione IT": "Azerbaigian",
+    "Codice AT": "Z253"
+  },
+  {
+    "Denominazione IT": "Georgia",
+    "Codice AT": "Z254"
+  },
+  {
+    "Denominazione IT": "Kirghizistan",
+    "Codice AT": "Z256"
+  },
+  {
+    "Denominazione IT": "Tagikistan",
+    "Codice AT": "Z257"
+  },
+  {
+    "Denominazione IT": "Taiwan",
+    "Codice AT": "Z217"
+  },
+  {
+    "Denominazione IT": "Turkmenistan",
+    "Codice AT": "Z258"
+  },
+  {
+    "Denominazione IT": "Algeria",
+    "Codice AT": "Z301"
+  },
+  {
+    "Denominazione IT": "Angola",
+    "Codice AT": "Z302"
+  },
+  {
+    "Denominazione IT": "Costa d'Avorio",
+    "Codice AT": "Z313"
+  },
+  {
+    "Denominazione IT": "Benin",
+    "Codice AT": "Z314"
+  },
+  {
+    "Denominazione IT": "Botswana",
+    "Codice AT": "Z358"
+  },
+  {
+    "Denominazione IT": "Burkina Faso",
+    "Codice AT": "Z354"
+  },
+  {
+    "Denominazione IT": "Burundi",
+    "Codice AT": "Z305"
+  },
+  {
+    "Denominazione IT": "Camerun",
+    "Codice AT": "Z306"
+  },
+  {
+    "Denominazione IT": "Capo Verde",
+    "Codice AT": "Z307"
+  },
+  {
+    "Denominazione IT": "Repubblica Centrafricana",
+    "Codice AT": "Z308"
+  },
+  {
+    "Denominazione IT": "Ciad",
+    "Codice AT": "Z309"
+  },
+  {
+    "Denominazione IT": "Comore",
+    "Codice AT": "Z310"
+  },
+  {
+    "Denominazione IT": "Congo",
+    "Codice AT": "Z311"
+  },
+  {
+    "Denominazione IT": "Egitto",
+    "Codice AT": "Z336"
+  },
+  {
+    "Denominazione IT": "Etiopia",
+    "Codice AT": "Z315"
+  },
+  {
+    "Denominazione IT": "Gabon",
+    "Codice AT": "Z316"
+  },
+  {
+    "Denominazione IT": "Gambia",
+    "Codice AT": "Z317"
+  },
+  {
+    "Denominazione IT": "Ghana",
+    "Codice AT": "Z318"
+  },
+  {
+    "Denominazione IT": "Gibuti",
+    "Codice AT": "Z361"
+  },
+  {
+    "Denominazione IT": "Guinea",
+    "Codice AT": "Z319"
+  },
+  {
+    "Denominazione IT": "Guinea-Bissau",
+    "Codice AT": "Z320"
+  },
+  {
+    "Denominazione IT": "Guinea equatoriale",
+    "Codice AT": "Z321"
+  },
+  {
+    "Denominazione IT": "Kenya",
+    "Codice AT": "Z322"
+  },
+  {
+    "Denominazione IT": "Lesotho",
+    "Codice AT": "Z359"
+  },
+  {
+    "Denominazione IT": "Liberia",
+    "Codice AT": "Z325"
+  },
+  {
+    "Denominazione IT": "Libia",
+    "Codice AT": "Z326"
+  },
+  {
+    "Denominazione IT": "Madagascar",
+    "Codice AT": "Z327"
+  },
+  {
+    "Denominazione IT": "Malawi",
+    "Codice AT": "Z328"
+  },
+  {
+    "Denominazione IT": "Mali",
+    "Codice AT": "Z329"
+  },
+  {
+    "Denominazione IT": "Marocco",
+    "Codice AT": "Z330"
+  },
+  {
+    "Denominazione IT": "Mauritania",
+    "Codice AT": "Z331"
+  },
+  {
+    "Denominazione IT": "Maurizio",
+    "Codice AT": "Z332"
+  },
+  {
+    "Denominazione IT": "Mozambico",
+    "Codice AT": "Z333"
+  },
+  {
+    "Denominazione IT": "Namibia",
+    "Codice AT": "Z300"
+  },
+  {
+    "Denominazione IT": "Niger",
+    "Codice AT": "Z334"
+  },
+  {
+    "Denominazione IT": "Nigeria",
+    "Codice AT": "Z335"
+  },
+  {
+    "Denominazione IT": "Ruanda",
+    "Codice AT": "Z338"
+  },
+  {
+    "Denominazione IT": "Sao Tom� e Principe",
+    "Codice AT": "Z341"
+  },
+  {
+    "Denominazione IT": "Seychelles",
+    "Codice AT": "Z342"
+  },
+  {
+    "Denominazione IT": "Senegal",
+    "Codice AT": "Z343"
+  },
+  {
+    "Denominazione IT": "Sierra Leone",
+    "Codice AT": "Z344"
+  },
+  {
+    "Denominazione IT": "Somalia",
+    "Codice AT": "Z345"
+  },
+  {
+    "Denominazione IT": "Sudafrica",
+    "Codice AT": "Z347"
+  },
+  {
+    "Denominazione IT": "Sudan",
+    "Codice AT": "Z348"
+  },
+  {
+    "Denominazione IT": "Eswatini",
+    "Codice AT": "Z349"
+  },
+  {
+    "Denominazione IT": "Tanzania",
+    "Codice AT": "Z357"
+  },
+  {
+    "Denominazione IT": "Togo",
+    "Codice AT": "Z351"
+  },
+  {
+    "Denominazione IT": "Tunisia",
+    "Codice AT": "Z352"
+  },
+  {
+    "Denominazione IT": "Uganda",
+    "Codice AT": "Z353"
+  },
+  {
+    "Denominazione IT": "Repubblica Democratica del Congo",
+    "Codice AT": "Z312"
+  },
+  {
+    "Denominazione IT": "Zambia",
+    "Codice AT": "Z355"
+  },
+  {
+    "Denominazione IT": "Zimbabwe",
+    "Codice AT": "Z337"
+  },
+  {
+    "Denominazione IT": "Eritrea",
+    "Codice AT": "Z368"
+  },
+  {
+    "Denominazione IT": "Sud Sudan",
+    "Codice AT": "Z907"
+  },
+  {
+    "Denominazione IT": "Antigua e Barbuda",
+    "Codice AT": "Z532"
+  },
+  {
+    "Denominazione IT": "Bahamas",
+    "Codice AT": "Z502"
+  },
+  {
+    "Denominazione IT": "Barbados",
+    "Codice AT": "Z522"
+  },
+  {
+    "Denominazione IT": "Belize",
+    "Codice AT": "Z512"
+  },
+  {
+    "Denominazione IT": "Canada",
+    "Codice AT": "Z401"
+  },
+  {
+    "Denominazione IT": "Costa Rica",
+    "Codice AT": "Z503"
+  },
+  {
+    "Denominazione IT": "Cuba",
+    "Codice AT": "Z504"
+  },
+  {
+    "Denominazione IT": "Dominica",
+    "Codice AT": "Z526"
+  },
+  {
+    "Denominazione IT": "Repubblica Dominicana",
+    "Codice AT": "Z505"
+  },
+  {
+    "Denominazione IT": "El Salvador",
+    "Codice AT": "Z506"
+  },
+  {
+    "Denominazione IT": "Giamaica",
+    "Codice AT": "Z507"
+  },
+  {
+    "Denominazione IT": "Grenada",
+    "Codice AT": "Z524"
+  },
+  {
+    "Denominazione IT": "Guatemala",
+    "Codice AT": "Z509"
+  },
+  {
+    "Denominazione IT": "Haiti",
+    "Codice AT": "Z510"
+  },
+  {
+    "Denominazione IT": "Honduras",
+    "Codice AT": "Z511"
+  },
+  {
+    "Denominazione IT": "Messico",
+    "Codice AT": "Z514"
+  },
+  {
+    "Denominazione IT": "Nicaragua",
+    "Codice AT": "Z515"
+  },
+  {
+    "Denominazione IT": "Panama",
+    "Codice AT": "Z516"
+  },
+  {
+    "Denominazione IT": "Santa Lucia",
+    "Codice AT": "Z527"
+  },
+  {
+    "Denominazione IT": "Saint Vincent e Grenadine",
+    "Codice AT": "Z528"
+  },
+  {
+    "Denominazione IT": "Saint Kitts e Nevis",
+    "Codice AT": "Z533"
+  },
+  {
+    "Denominazione IT": "Stati Uniti d'America",
+    "Codice AT": "Z404"
+  },
+  {
+    "Denominazione IT": "Argentina",
+    "Codice AT": "Z600"
+  },
+  {
+    "Denominazione IT": "Bolivia",
+    "Codice AT": "Z601"
+  },
+  {
+    "Denominazione IT": "Brasile",
+    "Codice AT": "Z602"
+  },
+  {
+    "Denominazione IT": "Cile",
+    "Codice AT": "Z603"
+  },
+  {
+    "Denominazione IT": "Colombia",
+    "Codice AT": "Z604"
+  },
+  {
+    "Denominazione IT": "Ecuador",
+    "Codice AT": "Z605"
+  },
+  {
+    "Denominazione IT": "Guyana",
+    "Codice AT": "Z606"
+  },
+  {
+    "Denominazione IT": "Paraguay",
+    "Codice AT": "Z610"
+  },
+  {
+    "Denominazione IT": "Per�",
+    "Codice AT": "Z611"
+  },
+  {
+    "Denominazione IT": "Suriname",
+    "Codice AT": "Z608"
+  },
+  {
+    "Denominazione IT": "Trinidad e Tobago",
+    "Codice AT": "Z612"
+  },
+  {
+    "Denominazione IT": "Uruguay",
+    "Codice AT": "Z613"
+  },
+  {
+    "Denominazione IT": "Venezuela",
+    "Codice AT": "Z614"
+  },
+  {
+    "Denominazione IT": "Australia",
+    "Codice AT": "Z700"
+  },
+  {
+    "Denominazione IT": "Figi",
+    "Codice AT": "Z704"
+  },
+  {
+    "Denominazione IT": "Kiribati",
+    "Codice AT": "Z731"
+  },
+  {
+    "Denominazione IT": "Isole Marshall",
+    "Codice AT": "Z711"
+  },
+  {
+    "Denominazione IT": "Stati Federati di Micronesia",
+    "Codice AT": "Z735"
+  },
+  {
+    "Denominazione IT": "Nauru",
+    "Codice AT": "Z713"
+  },
+  {
+    "Denominazione IT": "Nuova Zelanda",
+    "Codice AT": "Z719"
+  },
+  {
+    "Denominazione IT": "Palau",
+    "Codice AT": "Z734"
+  },
+  {
+    "Denominazione IT": "Papua Nuova Guinea",
+    "Codice AT": "Z730"
+  },
+  {
+    "Denominazione IT": "Isole Salomone",
+    "Codice AT": "Z724"
+  },
+  {
+    "Denominazione IT": "Samoa",
+    "Codice AT": "Z726"
+  },
+  {
+    "Denominazione IT": "Tonga",
+    "Codice AT": "Z728"
+  },
+  {
+    "Denominazione IT": "Tuvalu",
+    "Codice AT": "Z732"
+  },
+  {
+    "Denominazione IT": "Vanuatu",
+    "Codice AT": "Z733"
+  },
+  {
+    "Denominazione IT": "Nuova Caledonia",
+    "Codice AT": "Z716"
+  },
+  {
+    "Denominazione IT": "Saint-Martin (FR)",
+    "Codice AT": "n.d."
+  },
+  {
+    "Denominazione IT": "Sahara occidentale",
+    "Codice AT": "Z339"
+  },
+  {
+    "Denominazione IT": "Saint-Barth�lemy",
+    "Codice AT": "n.d."
+  },
+  {
+    "Denominazione IT": "Bermuda",
+    "Codice AT": "Z400"
+  },
+  {
+    "Denominazione IT": "Isole Cook (NZ)",
+    "Codice AT": "Z703"
+  },
+  {
+    "Denominazione IT": "Gibilterra",
+    "Codice AT": "Z113"
+  },
+  {
+    "Denominazione IT": "Isole Cayman",
+    "Codice AT": "Z530"
+  },
+  {
+    "Denominazione IT": "Anguilla",
+    "Codice AT": "Z529"
+  },
+  {
+    "Denominazione IT": "Polinesia francese",
+    "Codice AT": "Z723"
+  },
+  {
+    "Denominazione IT": "Isole F�r �er",
+    "Codice AT": "Z108"
+  },
+  {
+    "Denominazione IT": "Jersey",
+    "Codice AT": "n.d."
+  },
+  {
+    "Denominazione IT": "Aruba",
+    "Codice AT": "Z501"
+  },
+  {
+    "Denominazione IT": "Sint Maarten (NL)",
+    "Codice AT": "n.d."
+  },
+  {
+    "Denominazione IT": "Groenlandia",
+    "Codice AT": "Z402"
+  },
+  {
+    "Denominazione IT": "Sark",
+    "Codice AT": "n.d."
+  },
+  {
+    "Denominazione IT": "Guernsey",
+    "Codice AT": "n.d."
+  },
+  {
+    "Denominazione IT": "Isole Falkland (Malvine)",
+    "Codice AT": "Z609"
+  },
+  {
+    "Denominazione IT": "Isola di Man",
+    "Codice AT": "Z122"
+  },
+  {
+    "Denominazione IT": "Montserrat",
+    "Codice AT": "Z531"
+  },
+  {
+    "Denominazione IT": "Cura�ao",
+    "Codice AT": "n.d."
+  },
+  {
+    "Denominazione IT": "Isole Pitcairn",
+    "Codice AT": "Z722"
+  },
+  {
+    "Denominazione IT": "Saint Pierre e Miquelon",
+    "Codice AT": "Z403"
+  },
+  {
+    "Denominazione IT": "Sant'Elena",
+    "Codice AT": "Z340"
+  },
+  {
+    "Denominazione IT": "Terre australi e antartiche francesi",
+    "Codice AT": "n.d."
+  },
+  {
+    "Denominazione IT": "Isole Turks e Caicos",
+    "Codice AT": "Z519"
+  },
+  {
+    "Denominazione IT": "Isole Vergini britanniche",
+    "Codice AT": "Z525"
+  },
+  {
+    "Denominazione IT": "Wallis e Futuna",
+    "Codice AT": "Z729"
+  }
+]}

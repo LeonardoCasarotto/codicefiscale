@@ -136,9 +136,28 @@ function data(date,sex){
 
 function codicecatastale(value,district){
     
-    var result;
+    var result
+
+    if(district=="EE"){
+        $.ajax({
+            url: "./data/estero.json",
+            dataType: "json",
+            type: "get",
+            async: false, // this doesn't allow to start the next function without having completed this one
+            cache: false,
+            success: function (obj){
+                const keyone= "Denominazione IT";
+
+                result= obj.stati.find((x => x[keyone] ==value));
+                codicecat =result["Codice AT"];
+                console.log(codicecat);
+
+            }
+        });
+    }
+    else{
     $.ajax({
-        url: "./data/codici.json",
+        url: "./data/italia.json",
         dataType: "json",
         type: "get",
         async: false, // this doesn't allow to start the next function without having completed this one
@@ -152,6 +171,7 @@ function codicecatastale(value,district){
 
         }
     });
+    }
 
 
 }
